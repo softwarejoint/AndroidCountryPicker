@@ -18,13 +18,28 @@ The functions are simple:
 
 ## How to use
 
-To embed CountryPicker in your own view:
+Add maven repository to your project's build.gradle
 
-add dependency to your module's build.gradle
+```
+allprojects {
+    repositories {
+        jcenter()
+    }
+    repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+```
+
+Add dependency to your module's build.gradle
 
 ```
 compile 'com.github.softwarejoint:AndroidCountryPicker:v1.0'
 ```
+
+To embed CountryPicker in your own view:
 
 ```java
 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
