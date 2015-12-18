@@ -20,6 +20,12 @@ The functions are simple:
 
 To embed CountryPicker in your own view:
 
+add dependency to your module's build.gradle
+
+```
+compile 'com.github.softwarejoint:AndroidCountryPicker:v1.0'
+```
+
 ```java
 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 CountryPicker picker = new CountryPicker();
